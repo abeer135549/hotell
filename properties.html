@@ -1,0 +1,534 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="fun.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutUs.html">AboutUs</a></li>
+                <li><a href="properties.html">Properties</a></li>
+            </ul>
+        </header>
+        <table class="styled-table"id="Table1">
+            <thead>
+                <tr>
+                    <th>اختيار</th>
+                    <th>إظهار التفاصيل</th>
+                    <th>الإيجار الشهري</th>
+                    <th>تفاصيل</th>
+                    <th>المدينة</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="active-row">
+                    <td>
+                        <div>
+                            <label class="check">
+                                <input id="ch1" name="check" type="checkbox" onchange="enablebutton()">
+                                <div class="transition"></div>
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="chk1" type="checkbox" class="flip" onchange="fn_chk1()">
+
+                    </td>
+                    <td>ل.س 500000  </td>
+                    <td>شقة غرفتين وصالة مساحة 70 م</td>
+                    <td>دمشق</td>
+                </tr>
+                <tr id="tr1" style="display:none">
+                    <td colspan="2">
+                        <div>
+                            <h5>المنطقة: ركن الدين</h5>
+                            <h5>الملكية: طابو</h5>
+                            <img src="مقروش/1.jpg">
+                        </div>
+                    </td>
+                    <td colspan="1">
+                        <div>
+                            <h5>متوفر كراج</h5>
+                            <h5>بلكون مساحة 12 م</h5>
+                            <img src="مقروش/11.jpg">
+                        </div>
+                    </td>
+
+                    <td colspan="2">
+                        <div>
+                            <h5>الطابق الثالث</h5>
+                            <h5>مفروشة</h5>
+                            <img src="مقروش/111.jpg">
+                        </div>
+                    </td>
+
+
+                </tr>
+                <tr class="active-row">
+                    <td>
+                        <div class="chozen">
+                            <label class="check">
+                                <input id="ch2" type="checkbox" onchange="enablebutton()">
+                                <div class="transition"></div>
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="chk2" type="checkbox" class="flip" onchange="fn_chk2()">
+                    </td>
+                    <td>250000 ل.س</td>
+                    <td>دكان مساحة 50 م </td>
+                    <td>حمص</td>
+                </tr>
+                <tr id="tr2" style="display:none">
+                    <td colspan="2">
+                        <div>
+                            <h5>المنطقة: كرم الشامي </h5>
+                            <h5>عقد سنوي </h5>
+                            <img src="دكان/download.jpg">
+                        </div>
+                    </td>
+                    <td colspan="1">
+                        <div>
+                            <h5>متوفر حديقة</h5>
+                            <h5>واجهة مساحة 8 م</h5>
+                            <img src="دكان/images (1).jpg">
+                        </div>
+                    </td>
+
+                    <td colspan="2">
+                        <div>
+                            <h5>مقابل مبنى البلدية </h5>
+                            <h5>جاهز</h5>
+                            <img src="دكان/images.jpg">
+                        </div>
+                    </td>
+
+                </tr>
+                <tr class="active-row">
+                    <td>
+                        <div class="chozen">
+                            <label class="check">
+                                <input id="ch3" type="checkbox" onchange="enablebutton()">
+                                <div class="transition"></div>
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="chk3" type="checkbox" class="flip" onchange="fn_chk3()">
+                    </td>
+                    <td>600000</td>
+                    <td>شقة فارغة غرفتين مساحة 110 م </td>
+                    <td>دمشق</td>
+                </tr>
+                <tr id="tr3" style="display:none">
+                    <td colspan="2">
+                        <div>
+                            <h5>المنطقة: المزة  </h5>
+                            <h5>الملكية طابو </h5>
+                            <img src="فارغ/1.jpg">
+                        </div>
+                    </td>
+                    <td colspan="1">
+                        <div>
+                            <h5>متوفر كراج </h5>
+                            <h5>سطح مساحة 120 م</h5>
+                            <img src="فارغ/2.jpg">
+                        </div>
+                    </td>
+
+                    <td colspan="2">
+                        <div>
+                            <h5>طابق أول </h5>
+                            <h5>غير مفروشة</h5>
+                            <img src="فارغ/3.jpg">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="active-row">
+                    <td>
+                        <div class="chozen">
+                            <label class="check">
+                                <input id="ch4" type="checkbox" onchange="enablebutton()">
+                                <div class="transition"></div>
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="chk4" type="checkbox" class="flip" onchange="fn_chk4()">
+                    </td>
+                    <td>300000 ل.س</td>
+                    <td>سيارة نوع سيراتو  </td>
+                    <td>دمشق</td>
+                </tr>
+                <tr id="tr4" style="display:none">
+                    <td colspan="2">
+                        <div>
+                            <h5>المنطقة: المزة  </h5>
+                            <h5>الملكية مكتب </h5>
+                            <img src="سيارات/serato.jpg">
+                        </div>
+                    </td>
+                    <td colspan="1">
+                        <div>
+                            <h5>أربع أبواب</h5>
+                            <h5>لون أبيض</h5>
+                            <img src="سيارات/serato1.jpg">
+                        </div>
+                    </td>
+
+                    <td colspan="2">
+                        <div>
+                            <h5>فرش جديد</h5>
+                            <h5>خالية العلام</h5>
+                            <img src="سيارات/serato2.jpg">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="active-row">
+                    <td>
+                        <div class="chozen">
+                            <label class="check">
+                                <input id="ch5" type="checkbox" onchange="enablebutton()">
+                                <div class="transition"></div>
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="chk5" type="checkbox" class="flip" onchange="fn_chk5()">
+                    </td>
+                    <td>250000 ل.س</td>
+                    <td>سيارة نوع بيجو  </td>
+                    <td>حماه</td>
+                </tr>
+                <tr id="tr5" style="display:none">
+                    <td colspan="2">
+                        <div>
+                            <h5>المنطقة: حماه المدينة  </h5>
+                            <h5>الملكية مكتب </h5>
+                            <img src="سيارات/bego2.jpg">
+                        </div>
+                    </td>
+                    <td colspan="1">
+                        <div>
+                            <h5>أربع أبواب</h5>
+                            <h5>لون أصفر</h5>
+                            <img src="سيارات/bego.jpg">
+                        </div>
+                    </td>
+
+                    <td colspan="2">
+                        <div>
+                            <h5>فرش جديد</h5>
+                            <h5>خالية العلام</h5>
+                            <img src="سيارات/bego1.jpg">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="active-row">
+                    <td>
+                        <div class="chozen">
+                            <label class="check">
+                                <input id="ch6" type="checkbox" onchange="enablebutton()">
+                                <div class="transition"></div>
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="chk6" type="checkbox" class="flip" onchange="fn_chk6()">
+                        <div class="checkmark"></div>
+                    </td>
+                    <td>800000 ل.س</td>
+                    <td>شقة أربع غرف وصالة مساحة 200 م </td>
+                    <td>دمشق</td>
+                </tr>
+                <tr id="tr6" style="display:none">
+                    <td colspan="2">
+                        <div>
+                            <h5>المنطقة: ركن الدين</h5>
+                            <h5>الملكية: طابو</h5>
+                            <img src="مقروش/2.jpg">
+                        </div>
+                    </td>
+                    <td colspan="1">
+                        <div>
+                            <h5>متوفر كراج</h5>
+                            <h5>بلكون مساحة 16 م</h5>
+                            <img src="مقروش/33.jpg">
+                        </div>
+                    </td>
+
+                    <td colspan="2">
+                        <div>
+                            <h5>الطابق الثاني</h5>
+                            <h5>مفروشة</h5>
+                            <img src="مقروش/222.jpg">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="active-row">
+                    <td>
+                        <div class="chozen">
+                            <label class="check">
+                                <input id="ch7" type="checkbox" onchange="enablebutton()">
+                                <div class="transition"></div>
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="chk7" type="checkbox" class="flip" onchange="fn_chk7()">
+                        <div class="checkmark"></div>
+                    </td>
+                    <td>650000 ل.س</td>
+                    <td> شقة مفروشة ثلاث غرف مساحة 140 م </td>
+                    <td>حمص</td>
+                </tr>
+                <tr id="tr7" style="display:none">
+                    <td colspan="2">
+                        <div>
+                            <h5>المنطقة: النزهة </h5>
+                            <h5>الملكية: طابو</h5>
+                            <img src="مقروش/3.jpg">
+                        </div>
+                    </td>
+                    <td colspan="1">
+                        <div>
+                            <h5>متوفر كراج</h5>
+                            <h5>بلكون مساحة 10 م</h5>
+                            <img src="مقروش/22.jpg">
+                        </div>
+                    </td>
+
+                    <td colspan="2">
+                        <div>
+                            <h5>الطابق الثاني</h5>
+                            <h5>مفروشة</h5>
+                            <img src="مقروش/333.jpg">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="active-row">
+                    <td>
+                        <div class="chozen">
+                            <label class="check">
+                                <input id="ch8" type="checkbox" onchange="enablebutton()">
+                                <div class="transition"></div>
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="chk8" type="checkbox" class="flip" onchange="fn_chk8()">
+                        <div class="checkmark"></div>
+                    </td>
+                    <td>450000 ل.س</td>
+                    <td>سيارة نوع أودي 2019  </td>
+                    <td>دمشق</td>
+                </tr>
+                <tr id="tr8" style="display:none">
+                    <td colspan="2">
+                        <div>
+                            <h5>المنطقة: المزة  </h5>
+                            <h5>الملكية مكتب </h5>
+                            <img src="سيارات/audi.jpg">
+                        </div>
+                    </td>
+                    <td colspan="1">
+                        <div>
+                            <h5>أربع أبواب</h5>
+                            <h5>لون أبيض</h5>
+                            <img src="سيارات/audi1.jpg">
+                        </div>
+                    </td>
+
+                    <td colspan="2">
+                        <div>
+                            <h5>فرش جديد</h5>
+                            <h5>خالية العلام</h5>
+                            <img src="سيارات/audi2.jpg">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="active-row">
+                    <td>
+                        <div class="chozen">
+                            <label class="check">
+                                <input id="ch9" type="checkbox" onchange="enablebutton()">
+                                <div class="transition"></div>
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="chk9" type="checkbox" class="flip" onchange="fn_chk9()">
+                        <div class="checkmark"></div>
+                    </td>
+                    <td>400000 ل.س</td>
+                    <td>شقة مفروشة غرفتين وصالة مساحة 95 م</td>
+                    <td>طرطوس</td>
+                </tr>
+                <tr id="tr9" style="display:none">
+                    <td colspan="2">
+                        <div>
+                            <h5>المنطقة: الشيخ بدر </h5>
+                            <h5>الملكية: طابو</h5>
+                            <img src="مقروش/4.jpg">
+                        </div>
+                    </td>
+                    <td colspan="1">
+                        <div>
+                            <h5>متوفر حديقة</h5>
+                            <h5>بلكون مساحة 10 م</h5>
+                            <img src="مقروش/44.jpg">
+                        </div>
+                    </td>
+
+                    <td colspan="2">
+                        <div>
+                            <h5>الطابق الأول</h5>
+                            <h5>مفروشة</h5>
+                            <img src="مقروش/444.jpg">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="active-row">
+                    <td>
+                        <div class="chozen">
+                            <label class="check">
+                                <input id="ch10" type="checkbox" onchange="enablebutton()">
+                                <div class="transition"></div>
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="chk10" type="checkbox" class="flip" onchange="fn_chk10()">
+                        <div class="checkmark"></div>
+                    </td>
+                    <td>450000 ل.س</td>
+                    <td>قبو مساحة 110</td>
+                    <td>دمشق</td>
+                </tr>
+                <tr id="tr10" style="display:none">
+                    <td colspan="2">
+                        <div>
+                            <h5>المنطقة: المزة 86 </h5>
+                            <h5>الملكية: طابو</h5>
+                            <img src="قبو/kh.jpg">
+                        </div>
+                    </td>
+                    <td colspan="1">
+                        <div>
+                            <h5>يصلح مستودع أو كراج</h5>
+                            <h5>سطح صالح للبناء </h5>
+                            <img src="قبو/kh1.jpg">
+                        </div>
+                    </td>
+
+                    <td colspan="2">
+                        <div>
+                            <h5>مجهز كهرباء</h5>
+                            <h5>مساحة كبيرة</h5>
+                            <img src="قبو/kh2.jpg">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="active-row">
+                    <td>
+                        <div class="chozen">
+                            <label class="check">
+                                <input id="ch11" type="checkbox" onchange="enablebutton()">
+                                <div class="transition"></div>
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="chk11" type="checkbox" class="flip" onchange="fn_chk11()">
+                        <div class="checkmark"></div>
+                    </td>
+                    <td>600000 ل.س</td>
+                    <td>مستودع تخزين مساحة 90 م</td>
+                    <td>حمص</td>
+                </tr>
+                <tr id="tr11" style="display:none">
+                    <td colspan="2">
+                        <div>
+                            <h5>المنطقة: كرم الشامي </h5>
+                            <h5>الملكية: طابو</h5>
+                            <img src="مستودع/1.jpg">
+                        </div>
+                    </td>
+                    <td colspan="1">
+                        <div>
+                            <h5>متوفر كراج</h5>
+                            <h5>تمديدات جاهزة</h5>
+                            <img src="مستودع/2.jpg">
+                        </div>
+                    </td>
+
+                    <td colspan="2">
+                        <div>
+                            <h5>الطابق الأرضي</h5>
+                            <h5>مساحة 90 م</h5>
+                            <img src="مستودع/3.jpg">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="button" disabled onclick="showform()">متابعة</button>
+
+        <section id="contact" style="display: none;">
+            <div class="content">
+                <div id="form">
+                    <form action="" id="contactForm" method="post">
+                        <span>الإسم الأول</span>
+                        <input type="text" name="fname" class="name" onchange="fnamecheck()" placeholder="أدخل الإسم الأول" tabindex=1 !required />
+                        <span>الإسم الأخير</span>
+                        <input type="text" name="lname" class="name2" onchange="lnamecheck()" placeholder="أدخل الكنية" tabindex=2 !required />
+                        <span id="id">الرقم الوطني</span>
+                        <input type="text" name="id" class="id" onchange="IDcheck()" placeholder="أدخل رقمك الوطني" tabindex=5 required />
+                        <span id="id">تاريخ الولادة</span>
+                        <input type="date" name="Date" class="date"  placeholder="أدخل تاريخ الولادة" max="2006-01-01" tabindex=5 !required />
+
+                        <span>الإيميل</span>
+                        <input type="text" name="email" class="email" onchange="emailcheck()" placeholder="أدخل الإيميل" tabindex=3 !required />
+                        <span>الرقم الجوال</span>
+                        <input type="text" name="id" class="mobile" onchange="phonecheck()" placeholder="أدخل رقمك الجوال" tabindex=4 !required />
+                       
+                        <span id="captcha"></span>
+                        <input type="text" name="captcha" class="captcha" maxlength="4" size="4" placeholder="أدخل رمز التحقق" tabindex=6 !required />
+                        <span>رسالة</span>
+                        <textarea class="message" placeholder="أرسل لنا ملاحظاتك" tabindex=7></textarea>
+                        <script>
+                            function GetSelected() {
+                                //Reference the Table.
+                                var x;
+                                var total = 0;
+                                var message="";
+                                var checkedBoxes = document.querySelectorAll('input[type="checkbox"]:checked');
+                                checkedBoxes.forEach(chk => {
+                                    chk.closest("tr").querySelectorAll('td:not(:nth-child(1), :nth-child(2))').forEach((td, index) => {
+                                        if (index == 0) {
+                                            x = td.innerHTML;
+                                            x = x.slice(0, -3);
+                                            total+= parseInt(x);
+                                        }
+                                        message = message + td.innerHTML + " ";
+                                    });
+                                    message += "\n";
+                                })
+                                alert(message);
+                                alert("Total =" + total);
+                            }
+
+                        </script>
+                        <input type="submit" name="submit" onclick="GetSelected();" value="إرسال" class="submit" tabindex=8 !required>
+                    </form>
+                </div>
+        </section>
+        <div style="display: none;" id="result"></div>
+    </div>
+</body>
