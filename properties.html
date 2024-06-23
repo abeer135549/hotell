@@ -122,7 +122,7 @@
                     <td>
                         <input id="chk3" type="checkbox" class="flip" onchange="fn_chk3()">
                     </td>
-                    <td>600000</td>
+                    <td>600000 ل.س</td>
                     <td>شقة فارغة غرفتين مساحة 110 م </td>
                     <td>دمشق</td>
                 </tr>
@@ -503,26 +503,7 @@
                         <span>رسالة</span>
                         <textarea class="message" placeholder="أرسل لنا ملاحظاتك" tabindex=7></textarea>
                         <script>
-                            function GetSelected() {
-                                //Reference the Table.
-                                var x;
-                                var total = 0;
-                                var message="";
-                                var checkedBoxes = document.querySelectorAll('input[type="checkbox"]:checked');
-                                checkedBoxes.forEach(chk => {
-                                    chk.closest("tr").querySelectorAll('td:not(:nth-child(1), :nth-child(2))').forEach((td, index) => {
-                                        if (index == 0) {
-                                            x = td.innerHTML;
-                                            x = x.slice(0, -3);
-                                            total+= parseInt(x);
-                                        }
-                                        message = message + td.innerHTML + " ";
-                                    });
-                                    message += "\n";
-                                })
-                                alert(message);
-                                alert("Total =" + total);
-                            }
+                           
 
                         </script>
                         <input type="submit" name="submit" onclick="GetSelected();" value="إرسال" class="submit" tabindex=8 !required>

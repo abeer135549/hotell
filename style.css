@@ -48,6 +48,10 @@ header a{
 table, th, td {
     padding: 10px;
 }
+a:link {
+    color: white;
+    background-color: transparent;
+}
 #content {
     color: #fff8f8;
     margin-top: 100px;

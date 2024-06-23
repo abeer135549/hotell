@@ -222,22 +222,28 @@ function lnamecheck(){
     }
 
 }
-function xxx() {
-    window.alert("I am an alert box!");
 
 
-}
 
-
-function show_value() {
-    window.alert("I am an alert box!");
-
-  var checkbox_state = []
-  var details= []
-  $("[name=check]:checked").each(function() {
-    details.push($(this).closest("tr").find("[name=details]").val()) //push value in array
-  })
-  console.log(details.toString());
+function GetSelected() {
+    //Reference the Table.
+    var x;
+    var total = 0;
+    var message = "";
+    var checkedBoxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    checkedBoxes.forEach(chk => {
+        chk.closest("tr").querySelectorAll('td:not(:nth-child(1), :nth-child(2))').forEach((td, index) => {
+            if (index == 0) {
+                x = td.innerHTML;
+                x = x.slice(0, -3);
+                total += parseInt(x);
+            }
+            message = message + td.innerHTML + " ";
+        });
+        message += "\n";
+    })
+    alert(message);
+    alert("Total =" + total);
 }
 
 
